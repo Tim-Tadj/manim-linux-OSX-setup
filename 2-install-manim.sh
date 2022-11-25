@@ -11,7 +11,6 @@ fi
 mkdir -p $proj_name
 cd $proj_name
 # create virtual environment
-echo "here"
 
 if command -v python &> /dev/null
 then
@@ -25,7 +24,6 @@ else
     echo "python command not found"
     exit
 fi
-echo "here 2"
 # This file must be used with "source bin/activate" *from bash*
 # you cannot run it directly
 
