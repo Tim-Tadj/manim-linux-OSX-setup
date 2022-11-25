@@ -36,7 +36,7 @@ if [ "$(uname)" == "Darwin" ]; then
     # install pango and scipy
     brew install pango scipy
     # install latex deps
-    brew --cask mactex-no-gui
+    brew install --cask mactex-no-gui
 fi
 
 
