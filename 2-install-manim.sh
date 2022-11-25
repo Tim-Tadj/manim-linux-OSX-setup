@@ -8,23 +8,24 @@ else
     exit 1
 fi
 
-mkdir $proj_name
+mkdir -p $proj_name
 cd $proj_name
 # create virtual environment
+echo "here"
 
-if command -v python3 &> /dev/null
+if command -v python &> /dev/null
 then
     echo "python3 command found"
     python3 -m venv .venv 
-elif command -v python &> /dev/null
+elif command -v python3 &> /dev/null
 then
     echo "python command found"
     python -m venv .venv 
 else
     echo "python command not found"
     exit
-
-
+fi
+echo "here 2"
 # This file must be used with "source bin/activate" *from bash*
 # you cannot run it directly
 
@@ -114,7 +115,7 @@ then
 else
     echo "pip command not found"
     exit
-
+fi
 #move create_new_proj.sh to the parent directory
 cp ../create-new-proj.sh ./
 chmod u+x create-new-proj.sh
