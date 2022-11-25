@@ -11,5 +11,5 @@ else
     exit 1
 fi
 
-manim init project $proj_name
+.venv/bin/manim init project $proj_name
 cd $proj_name
