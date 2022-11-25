@@ -1,3 +1,4 @@
+
 # manim init project
 
 #detect args
@@ -9,8 +10,6 @@ else
     echo "Too many arguments"
     exit 1
 fi
-
-source .venv/bin/activate
 
 manim init project $proj_name
 cd $proj_name
