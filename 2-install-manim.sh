@@ -94,5 +94,5 @@ fi
 pip install manim
 
 #move create_new_proj.sh to the parent directory
-cp ../create_new_proj.sh ./
-chmod u+x create_new_proj.sh
+cp ../create-new-proj.sh ./
+chmod u+x create-new-proj.sh
