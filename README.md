@@ -1,3 +1,7 @@
 # Steps to Create Manim Environment
 
-## First
+## Steps
+1. 
+```terminal
+
+```
