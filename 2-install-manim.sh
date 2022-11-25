@@ -91,7 +91,19 @@ if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r 2> /dev/null
 fi
 
-pip install manim
+#detect if pip  or pip3 command is available
+
+if command -v pip3 &> /dev/null
+then
+    echo "pip3 command found"
+    pip3 install manim
+elif command -v pip &> /dev/null
+then
+    echo "pip command found"
+    pip install manim
+else
+    echo "pip command not found"
+    exit
 
 #move create_new_proj.sh to the parent directory
 cp ../create-new-proj.sh ./
