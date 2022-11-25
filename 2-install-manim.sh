@@ -11,8 +11,18 @@ fi
 mkdir $proj_name
 cd $proj_name
 # create virtual environment
-python -m venv .venv 
 
+if command -v python3 &> /dev/null
+then
+    echo "python3 command found"
+    python3 -m venv .venv 
+elif command -v python &> /dev/null
+then
+    echo "python command found"
+    python -m venv .venv 
+else
+    echo "python command not found"
+    exit
 
 
 # This file must be used with "source bin/activate" *from bash*
