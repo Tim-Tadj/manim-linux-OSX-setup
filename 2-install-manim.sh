@@ -7,6 +7,7 @@ else
     echo "Too many arguments"
     exit 1
 fi
+conda deactivate
 
 mkdir -p $proj_name
 cd $proj_name
