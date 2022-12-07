@@ -12,11 +12,11 @@ mkdir -p $proj_name
 cd $proj_name
 # create virtual environment
 
-if command -v python &> /dev/null
+if command -v python3 &> /dev/null
 then
     echo "python3 command found"
     python3 -m venv .venv 
-elif command -v python3 &> /dev/null
+elif command -v python &> /dev/null
 then
     echo "python command found"
     python -m venv .venv 
