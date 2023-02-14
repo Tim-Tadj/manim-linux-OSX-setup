@@ -7,6 +7,8 @@ if [ -f /etc/debian_version ]; then
     sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
     # install latex deps
     sudo apt install texlive-latex-base texlive-full texlive-fonts-extra
+    #install python3-dev
+    sudo apt install python3-dev
 fi
 #detect arch
 if [ -f /etc/arch-release ]; then
